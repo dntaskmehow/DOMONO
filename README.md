@@ -76,18 +76,6 @@ Base64 encoding for stealthy data transfer.
 
 ---
 
-## OPSEC & COUNTERMEASURES
-
-- Use a Burner VPS for C2
-- Never use your real IP or personal infrastructure.
-- Obfuscate Binaries
-- Use UPX (Go) or Obfuscator-LLVM (Rust) to evade AV.
-- Rotate C2 Domains
-- Use domain fronting (e.g., Cloudflare) to hide C2 traffic.
-- Legal Compliance
-- Ensure all targets are within law enforcement scope or have signed consent forms.
-
----
 ##  INSTALL & RUN 
 
 ### Requirements
@@ -162,6 +150,16 @@ GOOS=windows GOARCH=amd64 go build -ldflags="-s -w -H=windowsgui" credential_dom
 rustc -C opt-level=3 -C target-feature=+crt-static credential_dominator.rs
 ./credential_dominator
 ```
--------------------------
+## OPSEC & COUNTERMEASURES
+
+- Use a Burner VPS for C2
+- Never use your real IP or personal infrastructure.
+- Obfuscate Binaries
+- Use UPX (Go) or Obfuscator-LLVM (Rust) to evade AV.
+- Rotate C2 Domains
+- Use domain fronting (e.g., Cloudflare) to hide C2 traffic.
+- Legal Compliance
+- Ensure all targets are within law enforcement scope or have signed consent forms.
+---
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=28&pause=1000&color=00F5FF&center=true&vCenter=true&width=700&lines=Researcher+dontaskmehow;DOMONO;CREDENTIAL+DOMINATION" alt="DOMONO banner" />
